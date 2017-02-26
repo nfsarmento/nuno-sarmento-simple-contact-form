@@ -13,8 +13,7 @@ Nuno Sarmento Simple Contact Form.
 
 == Description ==
 
-I have tried to keep this plugin as simple as possible, you are not going to be overwhelmed with options like some of the contact forms plugins out there.
-. Use the shortcode [ns_contact_form] to display form on page or post, the shortcode can be added manually or calling it on visual editor toolbar by clicking the form icon. All entries can be visualized on the form entries admin page plus all forms entries are editable and it can be exported to csv file
+I have tried to keep this plugin as simple as possible, you are not going to be overwhelmed with options like some of the contact forms plugins out there. Use the shortcode [ns_contact_form] to display form on page or post, the shortcode can be added manually or calling it on visual editor toolbar by clicking the form icon. All entries can be visualized on the form entries admin page plus all forms entries are editable and it can be exported to csv file
 
 
 = Current features =
