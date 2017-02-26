@@ -1,0 +1,7 @@
+$phablet:	480px;
+
+@import "ns-social-desktop";
+
+@media only screen and (max-width : $phablet) {
+    @import "ns-social-mobile";
+}

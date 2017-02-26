@@ -1,0 +1,204 @@
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.nsscf-form-text-center {
+    display: table;
+    margin: 0 auto;
+}
+
+.ns-form-content {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 540px;
+  margin: auto auto;
+  padding: 40px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px gainsboro;
+
+  .title {
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: 600;
+    padding-bottom: 30px;
+  }
+
+  input {
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 10px 0px;
+    border: none;
+    padding: 10px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+
+  span {
+    font-size: 0.9rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 10px;
+    margin: 20px 0px;
+    background-color: #66A756;
+    color: White;
+    border: none;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+
+  .ns-social-container {
+
+      width: 100%;
+      margin: 30px 0px;
+
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .social {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+
+        span {
+          display: inline-block;
+          vertical-align: baseline;
+          padding: 0 20px;
+
+          &:before, &:after{
+            content: '';
+            display: block;
+            width: 500px;
+            position: absolute;
+            top: 0.9em;
+            border-top: 1px solid White;
+          }
+
+          &:before{
+            right: 75%;
+          }
+
+          &:after{
+            left: 75%;
+          }
+        }
+
+      }
+
+      button {
+        float: left;
+        width: 30%;
+        margin: 0px 1.5%;
+
+        i {
+          padding-right: 7px;
+        }
+
+      }
+
+      button.ns-facebook {
+        background: #4464B2 !important;
+      }
+      button.ns-twitter {
+        background: #28A9E0 !important;
+      }
+      button.ns-google {
+        background: #DA4735 !important;
+      }
+
+
+   }
+
+
+   #nsscf-form {
+
+     width:100%;
+     clear:both;
+     margin:0;
+     padding:0;
+     border:0;
+
+     p {
+       margin:0 0 10px;
+       padding:0;
+     }
+
+     input.error,
+     textarea.error {
+       border-color:#ff0000;
+       color:#000;
+     }
+
+     .hide {
+       display:none;
+     }
+
+     .nsscf-form-info {
+       margin:20px 0;
+       font-style:italic;
+       font-size:1.20em;
+     }
+
+     span.error {
+       color: #ffffff;
+       display: block;
+       font-size: 14px;
+       font-weight: bold;
+       margin: 0;
+       padding: 0px;
+       background: #AAC9E9;
+     }
+
+     #nsscf-form_message,
+     #nsscf-form_name,
+     #nsscf-form_email,
+     #nsscf-form_subject,
+     #nsscf-form_captcha,
+     #nsscf-form_firstname,
+     #nsscf-form_lastname {
+       width:100%;
+     }
+
+     #nsscf-form_firstname,
+     #nsscf-form_lastname {
+       visibility:hidden;
+       display:none;
+     }
+
+     .g-recaptcha {
+       text-align: center;
+       display: table;
+       margin: 0 auto;
+     }
+
+
+     input#nsscf-form_send {
+       text-transform: uppercase;
+       font-family: inherit;
+       border-radius: 4px;
+       color: white;
+       border: none;
+       border-radius: 2px;
+       display: inline-block;
+       padding: 10px;
+       text-decoration: none;
+     }
+
+   }
+
+}
