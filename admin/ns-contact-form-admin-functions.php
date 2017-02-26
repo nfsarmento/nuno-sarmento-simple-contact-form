@@ -116,17 +116,6 @@ add_action('wp_ajax_csv_pull','ns_contact_form_csv_pull');
 
 
 /* ------------------------------------------
-// Enqueue form plugin scripts  -------------
---------------------------------------------- */
-
-function nuno_sarmento_simple_contact_form_scripts(){
- 		wp_enqueue_style('report-ns', plugins_url('/assets/css/ns-simple-contact-form.css', dirname(__FILE__)),  array(), NUNO_SARMENTO_SIM_CONTACT_VERSION,	'all' );
-		wp_enqueue_script( 'recaptcha', 'https://www.google.com/recaptcha/api.js' );
-}
-add_action('wp_enqueue_scripts', 'nuno_sarmento_simple_contact_form_scripts', 100);
-
-
-/* ------------------------------------------
 // Print out Form Syling --------------------
 --------------------------------------------- */
 function nuno_sarmento_scf_print_css() {
