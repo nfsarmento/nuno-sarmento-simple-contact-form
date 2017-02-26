@@ -31,6 +31,7 @@ class NS_Contact_Form_Table_List extends WP_List_Table
              case 'name':
              case 'email':
              case 'subject':
+             case 'phone':
              case 'message':
              case 'created_date':
                  return $item[$column_name];
@@ -93,6 +94,7 @@ class NS_Contact_Form_Table_List extends WP_List_Table
             'name' => __('Name', 'nuno-sarmento-simple-contact-form'),
             'email' => __('E-Mail', 'nuno-sarmento-simple-contact-form'),
             'subject' => __('Subject', 'nuno-sarmento-simple-contact-form'),
+            'phone' => __('Phone', 'nuno-sarmento-simple-contact-form'),
             'message' => __('Message', 'nuno-sarmento-simple-contact-form'),
             'created_date' => __('Created', 'nuno-sarmento-simple-contact-form'),
         );
@@ -112,6 +114,7 @@ class NS_Contact_Form_Table_List extends WP_List_Table
             'name' => array('name', true),
             'email' => array('email', false),
             'subject' => array('subject', true),
+            'phone' => array('phone', true),
             'message' => array('message', false),
             'created_date' => array('created_date', false),
         );

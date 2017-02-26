@@ -266,22 +266,22 @@ class NSSimpleContactForm {
     <style media="screen">
 
     </style>
-    <div class="ns_scf_instructions">
+    <div class="ns_scf_instructions" style=" background: rgb(226, 226, 226); padding: 26px;">
 
-      <h3>Shortcode attributes examples</h3>
+      <h3 style="font-size: 14px;">Shortcode attributes examples</h3>
       <ul>
-        <li><strong>Change email from admin:</strong> [ns_contact_form email_to="your-email-here"]</li>
-        <li><strong>Multiple email:</strong> [ns_contact_form email_to="first-email-here, second-email-here"]</li>
-        <li><strong>Change Name and Submit labels:</strong> [ns_contact_form label_name="Your Name" label_submit="Send"]</li>
-        <li><strong>Multiple email:</strong> [ns_contact_form email_to="first-email-here, second-email-here"]</li>
-        <li><strong>Hide subject field:</strong> [ns_contact_form hide_subject="true"]</li>
-        <li><strong>Hide phone field:</strong> [ns_contact_form hide_phone="true"]</li>
+        <li><strong>Change email from admin:</strong> <code>[ns_contact_form email_to="your-email-here"]</code></li>
+        <li><strong>Multiple email:</strong> <code>[ns_contact_form email_to="first-email-here, second-email-here"]</code></li>
+        <li><strong>Change Name and Submit labels:</strong> <code>[ns_contact_form label_name="Your Name" label_submit="Send"]</code></li>
+        <li><strong>Multiple email:</strong> <code>[ns_contact_form email_to="first-email-here, second-email-here"]</code></li>
+        <li><strong>Hide subject field:</strong> <code>[ns_contact_form hide_subject="true"]</code></li>
+        <li><strong>Hide phone field:</strong> <code>[ns_contact_form hide_phone="true"]</code></li>
       </ul>
-      <h3>Labels and erros</h3>
+      <h3 style="font-size: 14px;">Labels and erros</h3>
       <ul>
-        <li><strong>Label attributes:</strong> label_name, label_email, label_subject, label_phone, label_message, label_submit</li>
-        <li><strong>Label error attributes:</strong> error_name, error_email, error_subject, error_phone, error_message</li>
-        <li><strong>Error and success message attributes:</strong> message_error, message_success</li>
+        <li><strong>Label attributes:</strong> <code>label_name, label_email, label_subject, label_phone, label_message, label_submit</code></li>
+        <li><strong>Label error attributes:</strong> <code>error_name, error_email, error_subject, error_phone, error_message</code></li>
+        <li><strong>Error and success message attributes:</strong> <code>message_error, message_success</code></li>
       </ul>
 
     </div>

@@ -58,6 +58,7 @@ function ns_contact_form_page_handler()
         'name' => '',
         'email' => '',
         'subject' => '',
+        'phone' => '',
         'message' => '',
     );
 
@@ -180,6 +181,16 @@ function ns_simple_contact_form_meta_box_handler($item)
         <td>
             <input id="subject" name="subject" type="subject" style="width: 95%" value="<?php echo esc_attr($item['subject'])?>"
                    size="50" class="code" placeholder="<?php _e('Your subject', 'nuno-sarmento-simple-contact-form')?>" required>
+        </td>
+    </tr>
+
+    <tr class="form-field">
+        <th valign="top" scope="row">
+            <label for="phone"><?php _e('Phone', 'nuno-sarmento-simple-contact-form')?></label>
+        </th>
+        <td>
+            <input id="phone" name="phone" type="phone" style="width: 95%" value="<?php echo esc_attr($item['phone'])?>"
+                   size="50" class="code" placeholder="<?php _e('Your phone', 'nuno-sarmento-simple-contact-form')?>" required>
         </td>
     </tr>
 
