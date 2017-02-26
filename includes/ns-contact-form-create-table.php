@@ -19,6 +19,7 @@ function ns_cf_custom_table_example_install()
       name tinytext NOT NULL,
       email VARCHAR(200) NOT NULL,
       subject VARCHAR(200) NOT NULL,
+      phone VARCHAR(200) NOT NULL,
       message VARCHAR(200) NOT NULL,
       created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       PRIMARY KEY  (id)
@@ -52,6 +53,7 @@ function ns_cf_custom_table_example_install()
           name tinytext NOT NULL,
           email VARCHAR(100) NOT NULL,
           subject VARCHAR(200) NOT NULL,
+          phone VARCHAR(100) NOT NULL,
           message VARCHAR(200) NOT NULL,
           created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
           PRIMARY KEY  (id)

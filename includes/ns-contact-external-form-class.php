@@ -42,16 +42,19 @@ class NS_CONTACT_EXTERNAL_FORM {
         "label_name" => __('Name', 'nuno-sarmento-simple-contact-form'),
         "label_email" => __('Email', 'nuno-sarmento-simple-contact-form'),
         "label_subject" => __('Subject', 'nuno-sarmento-simple-contact-form'),
+        "label_phone" => __('Phone', 'nuno-sarmento-simple-contact-form'),
         "label_message" => __('Message', 'nuno-sarmento-simple-contact-form'),
         //"label_captcha" => __('Enter number %s', 'nuno-sarmento-simple-contact-form'),
         "label_submit" => __('Submit', 'nuno-sarmento-simple-contact-form'),
         "error_name" => __('Please enter at least 2 characters', 'nuno-sarmento-simple-contact-form'),
         "error_subject" => __('Please enter at least 2 characters', 'nuno-sarmento-simple-contact-form'),
+        "error_phone" => __('Please enter valid phone', 'nuno-sarmento-simple-contact-form'),
         "error_message" => __('Please enter at least 10 characters', 'nuno-sarmento-simple-contact-form'),
         "error_captcha" => __('Please enter the correct number', 'nuno-sarmento-simple-contact-form'),
         "error_email" => __('Please enter a valid email', 'nuno-sarmento-simple-contact-form'),
         "message_success" => __('Thank you! You will receive a response as soon as possible.', 'nuno-sarmento-simple-contact-form'),
-        "hide_subject" => ''
+        "hide_subject" => '',
+        "hide_phone" => ''
       ), $ns_scf_atts);
 
       // Set variables
@@ -62,6 +65,7 @@ class NS_CONTACT_EXTERNAL_FORM {
         //'form_captcha' => '',
         'form_firstname' => '',
         'form_lastname' => '',
+        'form_phone' => '',
         'form_message' => ''
       );
       $error = false;
@@ -78,7 +82,8 @@ class NS_CONTACT_EXTERNAL_FORM {
           'form_message' => wp_kses_post($_POST['nsscf-form_message']),
           //'form_captcha' => sanitize_text_field($_POST['nsscf-form_captcha']),
           'form_firstname' => sanitize_text_field($_POST['nsscf-form_firstname']),
-          'form_lastname' => sanitize_text_field($_POST['nsscf-form_lastname'])
+          'form_lastname' => sanitize_text_field($_POST['nsscf-form_lastname']),
+          'form_phone' => sanitize_text_field($_POST['nsscf-form_phone'])
         );
 
         // Validate name
@@ -137,6 +142,19 @@ class NS_CONTACT_EXTERNAL_FORM {
         }
         $form_data['form_lastname'] = $value;
 
+
+        // Validate phone
+        if ($ns_scf_atts['hide_phone'] != "true") {
+          $value = $post_data['form_phone'];
+          if ( strlen($value)<1 ) {
+            $error_class['form_phone'] = true;
+            $error = true;
+          }
+          $form_data['form_phone'] = $value;
+        }
+
+
+
         $recaptcha = $_POST['g-recaptcha-response'];
         $res = $this->reCaptcha($recaptcha);
         if(!$res['success']){
@@ -154,17 +172,22 @@ class NS_CONTACT_EXTERNAL_FORM {
             $wpdb->insert($table_name, array(
               'email' => $form_data['form_email'],
               'name' => $form_data['form_name'],
+              'phone' => $form_data['form_phone'],
               'subject' => $form_data['form_subject'],
               'message' => $form_data['form_message']
             ) );
 
             $to = $ns_scf_atts['email_to'];
+
             if ($ns_scf_atts['hide_subject'] != "true") {
               $subject = "(".get_bloginfo('name').") " . $form_data['form_subject'];
+            }elseif ($ns_scf_atts['hide_phone'] != "true") {
+              $subject = "(".get_bloginfo('name').") " . $form_data['form_phone'];
             } else {
               $subject = get_bloginfo('name');
             }
-            $message = $form_data['form_name'] . "\r\n\r\n" . $form_data['form_email'] . "\r\n\r\n" . $form_data['form_message'] . "\r\n\r\n" . sprintf( esc_attr__( 'IP: %s', 'nuno-sarmento-simple-contact-form' ), nuno_sarmento_simple_contact_form_get_the_ip() );
+
+            $message = $form_data['form_name'] . "\r\n\r\n" . $form_data['form_email'] . "\r\n\r\n" . $form_data['form_message'] . "\r\n\r\n" . $form_data['form_phone'] . "\r\n\r\n" . sprintf( esc_attr__( 'IP: %s', 'nuno-sarmento-simple-contact-form' ), nuno_sarmento_simple_contact_form_get_the_ip() );
             $headers = "Content-Type: text/plain; charset=UTF-8" . "\r\n";
             $headers .= "Content-Transfer-Encoding: 8bit" . "\r\n";
             $headers .= "From: ".$form_data['form_name']." <".$form_data['form_email'].">" . "\r\n";
@@ -184,6 +207,11 @@ class NS_CONTACT_EXTERNAL_FORM {
 
       // Hide or display subject field
       if ($ns_scf_atts['hide_subject'] == "true") {
+        $hide = true;
+      }
+
+      // Hide or display subject field
+      if ($ns_scf_atts['hide_phone'] == "true") {
         $hide = true;
       }
 
@@ -211,6 +239,11 @@ class NS_CONTACT_EXTERNAL_FORM {
 
         <p><label for="nsscf-form_subject" '.(isset($hide) ? ' class="hide"' : '').'><span class="'.(isset($error_class['form_subject']) ? "error" : "hide").'" >'.esc_attr($ns_scf_atts['error_subject']).'</span></label></p>
         <p><input type="text" placeholder="'.esc_attr($ns_scf_atts['label_subject']).'" name="nsscf-form_subject" id="nsscf-form_subject" '.(isset($hide) ? ' class="hide"' : ''). (isset($error_class['form_subject']) ? ' class="error"' : '').' maxlength="50" value="'.esc_attr($form_data['form_subject']).'" /></p>
+
+
+        <p><label for="nsscf-form_phone" '.(isset($hide) ? ' class="hide"' : '').'><span class="'.(isset($error_class['form_phone']) ? "error" : "hide").'" >'.esc_attr($ns_scf_atts['error_phone']).'</span></label></p>
+        <p><input type="text" placeholder="'.esc_attr($ns_scf_atts['label_phone']).'" name="nsscf-form_phone" id="nsscf-form_phone" '.(isset($hide) ? ' class="hide"' : ''). (isset($error_class['form_phone']) ? ' class="error"' : '').' maxlength="50" value="'.esc_attr($form_data['form_phone']).'" /></p>
+
 
         <p><input type="text" name="nsscf-form_firstname" id="nsscf-form_firstname" maxlength="50" value="'.esc_attr($form_data['form_firstname']).'" /></p>
 

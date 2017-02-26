@@ -21,14 +21,10 @@ If you have suggestions for a new add-on, feel free to email me at nfsarmento@gm
 Or follow me on Twitter!
 https://twitter.com/Nuno_M_Sarmento.
 
-= Question? =
-Please take a look at the Installation and FAQ section.
-
 = Translation =
 English
 
-
-== Installation ==
+== installation ==
 = How to use =
 After installation add shortcode `[ns_contact_form]` on your page to display form or calling it on visual editor toolbar by clicking the form icon.
 
@@ -38,69 +34,53 @@ While adding the shortcode you can add several attributes to personalize your fo
 
 While adding the widget you can add some additional information above your form.
 
-= Shortcode attributes =
-* Change email from admin: `[ns_contact_form email_to="your-email-here"]`
-* Multiple email: `[ns_contact_form email_to="first-email-here, second-email-here"]`
+= Shortcode attributes examples =
+* Change email from admin: [ns_contact_form email_to="your-email-here"].
+* Multiple email: [ns_contact_form email_to="first-email-here, second-email-here"].
+* Change Name and Submit labels: [ns_contact_form label_name="Your Name" label_submit="Send"].
+* Multiple email: [ns_contact_form email_to="first-email-here, second-email-here"].
+* Hide subject field: [ns_contact_form hide_subject="true"].
+* Hide phone field: [ns_contact_form hide_phone="true"].
 
-You can also change message text or label text using an attribute.
-
-* Label attributes: label_name, label_email, label_subject, label_captcha, label_message, label_submit
-* Label error attributes: error_name, error_email, error_subject, error_captcha, error_message
-* Error and success message attributes: message_error, message_success
-
-= Examples =
-* Change Name and Submit labels: `[ns_contact_form label_name="Your Name" label_submit="Send"]`
-* Change captcha label: `[ns_contact_form label_captcha="Please enter %s"]`
-* Change captcha label: `[ns_contact_form label_captcha="Please enter %s here"]`
-
-= Subject field =
-* Hide field: `[ns_contact_form hide_subject="true"]`
-
-
-= Examples =
-* Change email from admin: `email_to="your-email-here"`
-* Multiple email: `email_to="first-email-here, second-email-here"`
-* Change Name and Submit labels: `label_name="Your Name" label_submit="Send"`
-* Change captcha label: `label_captcha="Please enter %s"`
-* Change captcha label: `label_captcha="Please enter %s here"`
-* Hide subject field: `hide_subject="true"`
+= Labels and erros =
+* Label attributes: label_name, label_email, label_subject, label_phone, label_message, label_submit.
+* Label error attributes: error_name, error_email, error_subject, error_phone, error_message.
+* Error and success message attributes: message_error, message_success.
 
 
 == Frequently Asked Questions ==
-= How do I set plugin language? =
-Plugin uses the WP Dashboard language, set in Settings > General.
 
 = How do I add attributes? =
-You can find more info about this at the Installation section.
+You can find more info about this at the installation section under shortcode attributes examples or on the plugin options section.
 
-= How do I style my form? =
-Go to form options and choose your style
+= How do I style my contact form? =
+Go to form options and choose your style or if you want to get more advanced styling please instal "Nuno Sarmento CSS - JS".
 
-= Can I hide Subject field? =
-You can find more info about this at the Installation section.
+= Can I hide Subject or Phone field? =
+You can find more info about this at the installation section or on the plugin options section.
 
 = Can user enter HTML in form? =
-Yes, save HTML is allowed in message field and widget info field.
+Yes, save HTML is allowed in message field.
 
 = Can I use multiple shortcodes? =
-Do not use multiple shortcodes on the same website. This might cause a conflict.
+Do not use multiple shortcodes on the same website, this might cause a conflict.
 
 = Are form submissions listed in my plugin? =
-Yes, they will be send to admin by mail and storage on plugin admin page -> Form Entries .
+Yes, they will be send to admin by mail and storage on plugin admin page -> Form Entries.
 
 = Why am I not receiving form submissions? =
-* Look also in your junk/spam folder.
-* Check the Installation section and check shortcode (attributes) for mistakes.
-* Install another contactform plugin (such as Contact Form 7) to determine if it's caused by my plugin or something else.
-* Form submissions are send using the wp_mail function (similar to php mail function). Maybe your hosting provider disabled the php mail function, ask them to enable it.
+* Please look in your junk/spam folder.
+* Please check the plugin option section and check the shortcode (attributes) for mistakes.
+* Install another contact form plugin such as Contact Form 7 to determine if it is caused by this plugin or something else.
+* Form submissions are send using the wp_mail function is a similar to php mail function, check with your hosting provider if this options is enabled on your server.
 
 = Why does the google captcha not display properly? =
-Check the captcha scecret and private key on plugin options.
+Check the captcha secret and private key on the plugin options page.
 
 = Does this plugin has anti-spam features? =
-Of course, the default WordPress sanitization and escaping functions are included.
+Default WordPress sanitization and escaping functions are included.
 
-It also contains 2 (invisible) honeypot fields (firstname and lastname) and a simple captcha sum.
+It also contains 2 (invisible) honeypot fields (firstname and lastname).
 
 = Other question or comment? =
 Please open a topic in plugin forum.
@@ -110,9 +90,8 @@ Please open a topic in plugin forum.
 = 1.0.0 =
 Name standards.
 
-
 == Screenshots ==
-1. Very Simple Contact Form (Twenty Sixteen theme).
-2. Very Simple Contact Form (Twenty Sixteen theme).
-3. Very Simple Contact Form widget (Twenty Sixteen theme).
-4. Very Simple Contact Form widget (dashboard).
+1. Nuno Sarmento Simple Contact Form
+2. Nuno Sarmento Simple Contact Form
+3. Nuno Sarmento Simple Contact Form
+4. Nuno Sarmento Simple Contact Form
