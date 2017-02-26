@@ -107,7 +107,8 @@ Name standards.
 
 == Screenshots ==
 1. Nuno Sarmento Simple Contact Form - Options
-2. Nuno Sarmento Simple Contact Form - Form Entries
-3. Nuno Sarmento Simple Contact Form - Edit Entries
-4. Nuno Sarmento Simple Contact Form - Export forms to CSV
-5. Nuno Sarmento Simple Contact Form - Contact Form
+2. Nuno Sarmento Simple Contact Form - Add Form
+3. Nuno Sarmento Simple Contact Form - Form Entries
+4. Nuno Sarmento Simple Contact Form - Edit Entries
+5. Nuno Sarmento Simple Contact Form - Export forms to CSV
+6. Nuno Sarmento Simple Contact Form - Contact Form

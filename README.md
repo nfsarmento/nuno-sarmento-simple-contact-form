@@ -86,7 +86,8 @@ A - Default WordPress sanitization and escaping functions are included. It also 
 **Plugin Screenshots**
 
 ![Nuno Sarmento Simple Contact Form - Options](https://github.com/nfsarmento/nuno-sarmento-simple-contact-form/blob/master/assets/images/screenshot-1.png "Admin Panel Menu.")
-![ Nuno Sarmento Simple Contact Form - Form Entries](https://github.com/nfsarmento/nuno-sarmento-simple-contact-form/blob/master/assets/images/screenshot-2.png "Optional title")
-![ Nuno Sarmento Simple Contact Form - Edit Entries](https://github.com/nfsarmento/nuno-sarmento-simple-contact-form/blob/master/assets/images/screenshot-3.png "Optional title")
-![Nuno Sarmento Simple Contact Form - Export forms to CSV](https://github.com/nfsarmento/nuno-sarmento-simple-contact-form/blob/master/assets/images/screenshot-4.png "Optional title")
-![Nuno Sarmento Simple Contact Form - Contact Form](https://github.com/nfsarmento/nuno-sarmento-simple-contact-form/blob/master/assets/images/screenshot-5.png "Optional title")
+![Nuno Sarmento Simple Contact Form - Add Form](https://github.com/nfsarmento/nuno-sarmento-simple-contact-form/blob/master/assets/images/screenshot-2.png "Admin Panel Menu.")
+![ Nuno Sarmento Simple Contact Form - Form Entries](https://github.com/nfsarmento/nuno-sarmento-simple-contact-form/blob/master/assets/images/screenshot-3.png "Optional title")
+![ Nuno Sarmento Simple Contact Form - Edit Entries](https://github.com/nfsarmento/nuno-sarmento-simple-contact-form/blob/master/assets/images/screenshot-4.png "Optional title")
+![Nuno Sarmento Simple Contact Form - Export forms to CSV](https://github.com/nfsarmento/nuno-sarmento-simple-contact-form/blob/master/assets/images/screenshot-5.png "Optional title")
+![Nuno Sarmento Simple Contact Form - Contact Form](https://github.com/nfsarmento/nuno-sarmento-simple-contact-form/blob/master/assets/images/screenshot-6.png "Optional title")
