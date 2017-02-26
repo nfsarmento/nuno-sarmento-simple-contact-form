@@ -15,7 +15,23 @@ Nuno Sarmento Simple Contact Form.
 
 Nuno Sarmento is a simple contact form. Use the shortcode [ns_contact_form] to display form on page or post, the shortcode can be added manually or calling it on visual editor toolbar by clicking the form icon. All entries can be visualized on the form entries admin page plus all forms entries are editable and it can be exported to csv file
 
+
+= Current features =
+
+* Admin Option Panel.
+* Google Captcha
+* Anti-spam Features
+* Form Styling
+* Form Export
+* Form Edit Entries
+* Hide Fields
+* Fully responsive.
+* Social icons
+* Shortcode Attributes
+
+
 [youtube https://www.youtube.com/watch?v=nOCU0rKOrfM]
+
 
 If you have suggestions for a new add-on, feel free to email me at nfsarmento@gmail.com .
 Or follow me on Twitter!
@@ -79,7 +95,6 @@ Check the captcha secret and private key on the plugin options page.
 
 = Does this plugin has anti-spam features? =
 Default WordPress sanitization and escaping functions are included.
-
 It also contains 2 (invisible) honeypot fields (firstname and lastname).
 
 = Other question or comment? =
@@ -91,7 +106,8 @@ Please open a topic in plugin forum.
 Name standards.
 
 == Screenshots ==
-1. Nuno Sarmento Simple Contact Form
-2. Nuno Sarmento Simple Contact Form
-3. Nuno Sarmento Simple Contact Form
-4. Nuno Sarmento Simple Contact Form
+1. Nuno Sarmento Simple Contact Form - Options
+2. Nuno Sarmento Simple Contact Form - Form Entries
+3. Nuno Sarmento Simple Contact Form - Edit Entries
+4. Nuno Sarmento Simple Contact Form - Export forms to CSV
+5. Nuno Sarmento Simple Contact Form - Contact Form
