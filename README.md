@@ -20,10 +20,6 @@ I have tried to keep this plugin as simple as possible, you are not going to be 
 * Social icons
 * Shortcode Attributes
 
-**Click here to watch the plugin video**
-
-[![Nuno Sarmento Simple Contact Plugin](https://i.ytimg.com/vi/nOCU0rKOrfM/1.jpg)](https://www.youtube.com/watch?v=nOCU0rKOrfM)
-
 **Suggestions**
 
 If you have suggestions for a new add-on, feel free to email me at nfsarmento@gmail.com .
