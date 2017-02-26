@@ -107,7 +107,7 @@ class NSSimpleContactForm {
 
 		add_settings_section(
 			'ns_simple_contact_form_setting_section', // id
-			'Settings', // title
+			'', // title
 			array( $this, 'ns_simple_contact_form_section_info' ), // callback
 			'ns-simple-contact-form-admin' // page
 		);

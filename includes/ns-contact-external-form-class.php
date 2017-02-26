@@ -10,6 +10,12 @@ class NS_CONTACT_EXTERNAL_FORM {
       if (!isset ($_SESSION)) session_start();
       $_SESSION['ns-scf-captcha'] = isset($_SESSION['ns-scf-captcha']) ? $_SESSION['ns-scf-captcha'] : rand(10, 999);
       add_shortcode('ns_contact_form', array($this, 'shortcode'));
+      add_action('wp_enqueue_scripts', array($this, 'ns_scf_frontend_enqueue_scripts'));
+    }
+
+    public function ns_scf_frontend_enqueue_scripts() {
+      wp_register_style( 'font-awesome',  NUNO_SARMENTO_SIM_CONTACT_URI . 'assets/css/font-awesome.min.css');
+      wp_enqueue_style( 'font-awesome' );
     }
 
     public function reCaptcha($recaptcha){

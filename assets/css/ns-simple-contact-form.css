@@ -1,18 +1,17 @@
-@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
-/* line 2, ../sass/_ns-social-desktop.scss */
+/* line 1, ../sass/_ns-social-desktop.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 8, ../sass/_ns-social-desktop.scss */
+/* line 7, ../sass/_ns-social-desktop.scss */
 .nsscf-form-text-center {
   display: table;
   margin: 0 auto;
 }
 
-/* line 13, ../sass/_ns-social-desktop.scss */
+/* line 12, ../sass/_ns-social-desktop.scss */
 .ns-form-content {
   top: 0;
   bottom: 0;
@@ -26,14 +25,14 @@
   border-radius: 4px;
   box-shadow: 0 0 10px gainsboro;
 }
-/* line 26, ../sass/_ns-social-desktop.scss */
+/* line 25, ../sass/_ns-social-desktop.scss */
 .ns-form-content .title {
   text-align: center;
   font-size: 2.0rem;
   font-weight: 600;
   padding-bottom: 30px;
 }
-/* line 33, ../sass/_ns-social-desktop.scss */
+/* line 32, ../sass/_ns-social-desktop.scss */
 .ns-form-content input {
   width: 100%;
   font-size: 1.2rem;
@@ -44,11 +43,11 @@
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 44, ../sass/_ns-social-desktop.scss */
+/* line 43, ../sass/_ns-social-desktop.scss */
 .ns-form-content span {
   font-size: 0.9rem;
 }
-/* line 48, ../sass/_ns-social-desktop.scss */
+/* line 47, ../sass/_ns-social-desktop.scss */
 .ns-form-content button {
   width: 100%;
   font-size: 1.1rem;
@@ -61,31 +60,31 @@
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 61, ../sass/_ns-social-desktop.scss */
+/* line 60, ../sass/_ns-social-desktop.scss */
 .ns-form-content .ns-social-container {
   width: 100%;
   margin: 30px 0px;
 }
-/* line 66, ../sass/_ns-social-desktop.scss */
+/* line 65, ../sass/_ns-social-desktop.scss */
 .ns-form-content .ns-social-container:after {
   content: "";
   display: block;
   clear: both;
 }
-/* line 72, ../sass/_ns-social-desktop.scss */
+/* line 71, ../sass/_ns-social-desktop.scss */
 .ns-form-content .ns-social-container .social {
   width: 100%;
   position: relative;
   overflow: hidden;
   text-align: center;
 }
-/* line 78, ../sass/_ns-social-desktop.scss */
+/* line 77, ../sass/_ns-social-desktop.scss */
 .ns-form-content .ns-social-container .social span {
   display: inline-block;
   vertical-align: baseline;
   padding: 0 20px;
 }
-/* line 83, ../sass/_ns-social-desktop.scss */
+/* line 82, ../sass/_ns-social-desktop.scss */
 .ns-form-content .ns-social-container .social span:before, .ns-form-content .ns-social-container .social span:after {
   content: '';
   display: block;
@@ -94,37 +93,37 @@
   top: 0.9em;
   border-top: 1px solid White;
 }
-/* line 92, ../sass/_ns-social-desktop.scss */
+/* line 91, ../sass/_ns-social-desktop.scss */
 .ns-form-content .ns-social-container .social span:before {
   right: 75%;
 }
-/* line 96, ../sass/_ns-social-desktop.scss */
+/* line 95, ../sass/_ns-social-desktop.scss */
 .ns-form-content .ns-social-container .social span:after {
   left: 75%;
 }
-/* line 103, ../sass/_ns-social-desktop.scss */
+/* line 102, ../sass/_ns-social-desktop.scss */
 .ns-form-content .ns-social-container button {
   float: left;
   width: 30%;
   margin: 0px 1.5%;
 }
-/* line 108, ../sass/_ns-social-desktop.scss */
+/* line 107, ../sass/_ns-social-desktop.scss */
 .ns-form-content .ns-social-container button i {
   padding-right: 7px;
 }
-/* line 114, ../sass/_ns-social-desktop.scss */
+/* line 113, ../sass/_ns-social-desktop.scss */
 .ns-form-content .ns-social-container button.ns-facebook {
   background: #4464B2 !important;
 }
-/* line 117, ../sass/_ns-social-desktop.scss */
+/* line 116, ../sass/_ns-social-desktop.scss */
 .ns-form-content .ns-social-container button.ns-twitter {
   background: #28A9E0 !important;
 }
-/* line 120, ../sass/_ns-social-desktop.scss */
+/* line 119, ../sass/_ns-social-desktop.scss */
 .ns-form-content .ns-social-container button.ns-google {
   background: #DA4735 !important;
 }
-/* line 128, ../sass/_ns-social-desktop.scss */
+/* line 127, ../sass/_ns-social-desktop.scss */
 .ns-form-content #nsscf-form {
   width: 100%;
   clear: both;
@@ -132,28 +131,28 @@
   padding: 0;
   border: 0;
 }
-/* line 136, ../sass/_ns-social-desktop.scss */
+/* line 135, ../sass/_ns-social-desktop.scss */
 .ns-form-content #nsscf-form p {
   margin: 0 0 10px;
   padding: 0;
 }
-/* line 141, ../sass/_ns-social-desktop.scss */
+/* line 140, ../sass/_ns-social-desktop.scss */
 .ns-form-content #nsscf-form input.error,
 .ns-form-content #nsscf-form textarea.error {
   border-color: #ff0000;
   color: #000;
 }
-/* line 147, ../sass/_ns-social-desktop.scss */
+/* line 146, ../sass/_ns-social-desktop.scss */
 .ns-form-content #nsscf-form .hide {
   display: none;
 }
-/* line 151, ../sass/_ns-social-desktop.scss */
+/* line 150, ../sass/_ns-social-desktop.scss */
 .ns-form-content #nsscf-form .nsscf-form-info {
   margin: 20px 0;
   font-style: italic;
   font-size: 1.20em;
 }
-/* line 157, ../sass/_ns-social-desktop.scss */
+/* line 156, ../sass/_ns-social-desktop.scss */
 .ns-form-content #nsscf-form span.error {
   color: #ffffff;
   display: block;
@@ -163,7 +162,7 @@
   padding: 0px;
   background: #AAC9E9;
 }
-/* line 167, ../sass/_ns-social-desktop.scss */
+/* line 166, ../sass/_ns-social-desktop.scss */
 .ns-form-content #nsscf-form #nsscf-form_message,
 .ns-form-content #nsscf-form #nsscf-form_name,
 .ns-form-content #nsscf-form #nsscf-form_email,
@@ -173,19 +172,19 @@
 .ns-form-content #nsscf-form #nsscf-form_lastname {
   width: 100%;
 }
-/* line 177, ../sass/_ns-social-desktop.scss */
+/* line 176, ../sass/_ns-social-desktop.scss */
 .ns-form-content #nsscf-form #nsscf-form_firstname,
 .ns-form-content #nsscf-form #nsscf-form_lastname {
   visibility: hidden;
   display: none;
 }
-/* line 183, ../sass/_ns-social-desktop.scss */
+/* line 182, ../sass/_ns-social-desktop.scss */
 .ns-form-content #nsscf-form .g-recaptcha {
   text-align: center;
   display: table;
   margin: 0 auto;
 }
-/* line 190, ../sass/_ns-social-desktop.scss */
+/* line 189, ../sass/_ns-social-desktop.scss */
 .ns-form-content #nsscf-form input#nsscf-form_send {
   text-transform: uppercase;
   font-family: inherit;
