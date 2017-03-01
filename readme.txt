@@ -1,5 +1,7 @@
 === Nuno Sarmento Simple Contact Form ===
 Contributors: nunosarmento
+Author URI: https://www.nuno-sarmento.com
+Plugin URI: https://www.nuno-sarmento.com
 Donate link: https://www.nuno-sarmento.com
 Version: 1.0.0
 License: GNU General Public License v3 or later
