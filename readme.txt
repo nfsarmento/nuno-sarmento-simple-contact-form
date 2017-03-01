@@ -7,7 +7,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Requires at least: 3.7
 Tested up to: 4.7.2
 Stable tag: trunk
-Tags: nuno, sarmento, contact, form, shortcode, captcha, email
+Tags: email, contact, form, shortcode, google captcha, csv, export, entries, edit, nuno sarmento
 
 Nuno Sarmento Simple Contact Form.
 
@@ -30,7 +30,7 @@ I have tried to keep this plugin as simple as possible, you are not going to be 
 * Shortcode Attributes
 
 
-[youtube https://www.youtube.com/watch?v=nOCU0rKOrfM]
+[youtube https://www.youtube.com/watch?v=VDmaNEx88wI&]
 
 
 If you have suggestions for a new add-on, feel free to email me at nfsarmento@gmail.com .

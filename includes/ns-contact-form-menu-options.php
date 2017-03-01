@@ -114,7 +114,7 @@ class NSSimpleContactForm {
 
 		add_settings_field(
 			'google_captcha_public_key_0', // id
-			'Google Captcha Public Key', // title
+      __('Google Captcha Public Key', 'nuno-sarmento-simple-contact-form'), // title
 			array( $this, 'google_captcha_public_key_0_callback' ), // callback
 			'ns-simple-contact-form-admin', // page
 			'ns_simple_contact_form_setting_section' // section
@@ -122,7 +122,7 @@ class NSSimpleContactForm {
 
 		add_settings_field(
 			'google_captcha_private_key_1', // id
-			'Google Captcha Private Key', // title
+      __('Google Captcha Private Key', 'nuno-sarmento-simple-contact-form'), // title
 			array( $this, 'google_captcha_private_key_1_callback' ), // callback
 			'ns-simple-contact-form-admin', // page
 			'ns_simple_contact_form_setting_section' // section
@@ -130,7 +130,7 @@ class NSSimpleContactForm {
 
 		add_settings_field(
 			'facebook_url_2', // id
-			'Facebook URL <br></br>(no http needed)', // title
+      __('Facebook URL <br></br>(no http needed)', 'nuno-sarmento-simple-contact-form'), // title
 			array( $this, 'facebook_url_2_callback' ), // callback
 			'ns-simple-contact-form-admin', // page
 			'ns_simple_contact_form_setting_section' // section
@@ -138,7 +138,7 @@ class NSSimpleContactForm {
 
 		add_settings_field(
 			'google_url_3', // id
-			'Google URL <br></br>(no http needed)', // title
+      __('Google URL <br></br>(no http needed)', 'nuno-sarmento-simple-contact-form'), // title
 			array( $this, 'google_url_3_callback' ), // callback
 			'ns-simple-contact-form-admin', // page
 			'ns_simple_contact_form_setting_section' // section
@@ -146,7 +146,7 @@ class NSSimpleContactForm {
 
 		add_settings_field(
 			'twitter_url_4', // id
-			'Twitter URL <br></br>(no http needed)', // title
+      __('Twitter URL <br></br>(no http needed)', 'nuno-sarmento-simple-contact-form'), // title
 			array( $this, 'twitter_url_4_callback' ), // callback
 			'ns-simple-contact-form-admin', // page
 			'ns_simple_contact_form_setting_section' // section
@@ -154,7 +154,7 @@ class NSSimpleContactForm {
 
     add_settings_field(
 			'disable_social_icons_0', // id
-			'Disable Social Icons', // title
+      __('Disable Social Icons', 'nuno-sarmento-simple-contact-form'), // title
 			array( $this, 'disable_social_icons_0_callback' ), // callback
 			'ns-simple-contact-form-admin', // page
 			'ns_simple_contact_form_setting_section' // section
@@ -172,7 +172,7 @@ class NSSimpleContactForm {
     // Color picker submit button background
     add_settings_field(
       'ns_form_button_colorpicker', // id
-      __( 'Submit Button colour', 'nuno-sarmento-simple-contact-form' ), // title
+      __( 'Submit button - background colour', 'nuno-sarmento-simple-contact-form' ), // title
       array( $this, 'ns_form_colorpicker_button_callback' ), // callback
       'ns-simple-contact-form-admin', // page
       'ns_simple_contact_form_setting_section' // section
@@ -181,7 +181,7 @@ class NSSimpleContactForm {
     // Color picker submit button text colour
     add_settings_field(
       'ns_form_button_text_colorpicker', // id
-      __( 'Submit button text colour', 'nuno-sarmento-simple-contact-form' ), // title
+      __( 'Submit button - text colour', 'nuno-sarmento-simple-contact-form' ), // title
       array( $this, 'ns_form_colorpicker_button_text_callback' ), // callback
       'ns-simple-contact-form-admin', // page
       'ns_simple_contact_form_setting_section' // section
@@ -270,18 +270,18 @@ class NSSimpleContactForm {
 
       <h3 style="font-size: 14px;">Shortcode attributes examples</h3>
       <ul>
-        <li><strong>Change email from admin:</strong> <code>[ns_contact_form email_to="your-email-here"]</code></li>
-        <li><strong>Multiple email:</strong> <code>[ns_contact_form email_to="first-email-here, second-email-here"]</code></li>
-        <li><strong>Change Name and Submit labels:</strong> <code>[ns_contact_form label_name="Your Name" label_submit="Send"]</code></li>
-        <li><strong>Multiple email:</strong> <code>[ns_contact_form email_to="first-email-here, second-email-here"]</code></li>
-        <li><strong>Hide subject field:</strong> <code>[ns_contact_form hide_subject="true"]</code></li>
-        <li><strong>Hide phone field:</strong> <code>[ns_contact_form hide_phone="true"]</code></li>
+        <li><strong><?php esc_html_e( 'Change email from admin:', 'nuno-sarmento-simple-contact-form' ); ?></strong> <code>[ns_contact_form email_to="your-email-here"]</code></li>
+        <li><strong><?php esc_html_e( 'Multiple email:', 'nuno-sarmento-simple-contact-form' ); ?></strong> <code>[ns_contact_form email_to="first-email-here, second-email-here"]</code></li>
+        <li><strong><?php esc_html_e( 'Change Name and Submit labels:', 'nuno-sarmento-simple-contact-form' ); ?></strong> <code>[ns_contact_form label_name="Your Name" label_submit="Send"]</code></li>
+        <li><strong><?php esc_html_e( 'Multiple email:', 'nuno-sarmento-simple-contact-form' ); ?></strong> <code>[ns_contact_form email_to="first-email-here, second-email-here"]</code></li>
+        <li><strong><?php esc_html_e( 'Hide subject field:', 'nuno-sarmento-simple-contact-form' ); ?></strong> <code>[ns_contact_form hide_subject="true"]</code></li>
+        <li><strong><?php esc_html_e( 'Hide phone field:', 'nuno-sarmento-simple-contact-form' ); ?></strong> <code>[ns_contact_form hide_phone="true"]</code></li>
       </ul>
-      <h3 style="font-size: 14px;">Labels and erros</h3>
+      <h3 style="font-size: 14px;"><?php esc_html_e( 'Labels and erros', 'nuno-sarmento-simple-contact-form' ); ?></h3>
       <ul>
-        <li><strong>Label attributes:</strong> <code>label_name, label_email, label_subject, label_phone, label_message, label_submit</code></li>
-        <li><strong>Label error attributes:</strong> <code>error_name, error_email, error_subject, error_phone, error_message</code></li>
-        <li><strong>Error and success message attributes:</strong> <code>message_error, message_success</code></li>
+        <li><strong><?php esc_html_e( 'Label attributes:', 'nuno-sarmento-simple-contact-form' ); ?></strong> <code>label_name, label_email, label_subject, label_phone, label_message, label_submit</code></li>
+        <li><strong><?php esc_html_e( 'Label error attributes:', 'nuno-sarmento-simple-contact-form' ); ?></strong> <code>error_name, error_email, error_subject, error_phone, error_message</code></li>
+        <li><strong><?php esc_html_e( 'Error and success message attributes:', 'nuno-sarmento-simple-contact-form' ); ?></strong> <code>message_error, message_success</code></li>
       </ul>
 
     </div>

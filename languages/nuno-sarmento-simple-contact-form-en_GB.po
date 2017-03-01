@@ -1,0 +1,206 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Nuno Sarmento Simple Contact Form\n"
+"POT-Creation-Date: 2017-03-01 00:07+0000\n"
+"PO-Revision-Date: 2017-03-01 00:16+0000\n"
+"Last-Translator: \n"
+"Language-Team: NS <nfsarmento@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: includes/ns-contact-external-form-class.php:53
+#: #:includes/ns-contact-internal-form-class.php:160
+msgid "Name"
+msgstr ""
+
+#: includes/ns-contact-external-form-class.php:54
+#: #:includes/ns-contact-internal-form-class.php:169
+msgid "Email"
+msgstr ""
+
+#: includes/ns-contact-external-form-class.php:55
+#: #:includes/ns-contact-internal-form-class.php:179
+msgid "Subject"
+msgstr ""
+
+#: includes/ns-contact-external-form-class.php:56
+#: #:includes/ns-contact-internal-form-class.php:189
+msgid "Phone"
+msgstr ""
+
+#: includes/ns-contact-external-form-class.php:57
+#: #:includes/ns-contact-internal-form-class.php:199
+msgid "Message"
+msgstr ""
+
+#: includes/ns-contact-external-form-class.php:59
+msgid "Submit"
+msgstr ""
+
+#: includes/ns-contact-external-form-class.php:60
+#: #:includes/ns-contact-external-form-class.php:61
+msgid "Please enter at least 2 characters"
+msgstr ""
+
+#: includes/ns-contact-external-form-class.php:62
+msgid "Please enter valid phone"
+msgstr ""
+
+#: includes/ns-contact-external-form-class.php:63
+msgid "Please enter at least 10 characters"
+msgstr ""
+
+#: includes/ns-contact-external-form-class.php:64
+msgid "Please enter the correct number"
+msgstr ""
+
+#: includes/ns-contact-external-form-class.php:65
+msgid "Please enter a valid email"
+msgstr ""
+
+#: includes/ns-contact-external-form-class.php:66
+msgid "Thank you! You will receive a response as soon as possible."
+msgstr ""
+
+#: includes/ns-contact-internal-form-class.php:164
+msgid "Your name"
+msgstr ""
+
+#: includes/ns-contact-internal-form-class.php:173
+msgid "Your Email"
+msgstr ""
+
+#: includes/ns-contact-internal-form-class.php:183
+msgid "Your subject"
+msgstr ""
+
+#: includes/ns-contact-internal-form-class.php:193
+msgid "Your phone"
+msgstr ""
+
+#: includes/ns-contact-internal-form-class.php:204
+msgid "Your message"
+msgstr ""
+
+#: includes/ns-contact-internal-form-class.php:224
+msgid "Name is required"
+msgstr ""
+
+#: includes/ns-contact-internal-form-class.php:228
+msgid "Subject is required"
+msgstr ""
+
+#: includes/ns-contact-internal-form-class.php:229
+msgid "Message is required"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:35
+msgid "Form Options"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:73
+msgid "Other Plugins"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:74
+msgid "System Report"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:72
+msgid "Settings"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:117
+msgid "Google Captcha Public Key"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:125
+msgid "Google Captcha Private Key"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:133
+msgid "Facebook URL <br></br>(no http needed)"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:141
+msgid "Google URL <br></br>(no http needed)"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:149
+msgid "Twitter URL <br></br>(no http needed)"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:157
+msgid "Disable Social Icons"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:166
+msgid "Change form background"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:175
+msgid "Submit button - background colour"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:184
+msgid "Submit button - text colour"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:273
+msgid "Change email from admin:"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:274
+#: #:includes/ns-contact-form-menu-options.php:276
+msgid "Multiple email:"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:275
+msgid "Change Name and Submit labels:"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:277
+msgid "Hide subject field:"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:278
+msgid "Hide phone field:"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:280
+msgid "Labels and erros"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:282
+msgid "Label attributes:"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:283
+msgid "Label error attributes:"
+msgstr ""
+
+#: includes/ns-contact-form-menu-options.php:284
+msgid "Error and success message attributes:"
+msgstr ""
+
+#: admin/ns-contact-form-admin-functions.php:20
+msgid "Form Entries"
+msgstr ""
+
+#: admin/ns-contact-form-admin-functions.php:29
+msgid "Add new"
+msgstr ""
+
+#: admin/ns-contact-form-admin-functions.php:30
+msgid "Add new entry"
+msgstr ""
+
+#: admin/ns-contact-form-admin-functions.php:38
+msgid "Export"
+msgstr ""

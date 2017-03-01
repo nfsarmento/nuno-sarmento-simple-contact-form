@@ -166,11 +166,11 @@ function ns_simple_contact_form_meta_box_handler($item)
     </tr>
     <tr class="form-field">
         <th valign="top" scope="row">
-            <label for="email"><?php _e('E-Mail', 'nuno-sarmento-simple-contact-form')?></label>
+            <label for="email"><?php _e('Email', 'nuno-sarmento-simple-contact-form')?></label>
         </th>
         <td>
             <input id="email" name="email" type="email" style="width: 95%" value="<?php echo esc_attr($item['email'])?>"
-                   size="50" class="code" placeholder="<?php _e('Your E-Mail', 'nuno-sarmento-simple-contact-form')?>" required>
+                   size="50" class="code" placeholder="<?php _e('Your Email', 'nuno-sarmento-simple-contact-form')?>" required>
         </td>
     </tr>
 
@@ -222,7 +222,7 @@ function ns_cf_custom_table_validate_form($item)
     $messages = array();
 
     if (empty($item['name'])) $messages[] = __('Name is required', 'nuno-sarmento-simple-contact-form');
-    if (!empty($item['email']) && !is_email($item['email'])) $messages[] = __('E-Mail is in wrong format', 'nuno-sarmento-simple-contact-form');
+    if (!empty($item['email']) && !is_email($item['email'])) $messages[] = __('Email is in wrong format', 'nuno-sarmento-simple-contact-form');
     //if (!ctype_digit($item['age'])) $messages[] = __('Age in wrong format', 'nuno-sarmento-simple-contact-form');
     //if(!empty($item['age']) && !absint(intval($item['age'])))  $messages[] = __('Age can not be less than zero');
     if (empty($item['subject'])) $messages[] = __('Subject is required', 'nuno-sarmento-simple-contact-form');
